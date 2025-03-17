@@ -1,0 +1,232 @@
+<!-- This program creates a page called Design Artifacts, each providing several personas, scenarios, etc. -->
+
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Design artifacts</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <style>
+        .hero.is-primary {
+            background-color: yellow !important;
+            color: green !important;
+            margin: 0;
+        }
+
+            .hero.is-primary .title,
+            .hero.is-primary .subtitle {
+                color: green !important;
+            }
+
+            .hero.is-primary .title {
+                font-size: 7.75rem !important;
+            }
+
+            .hero.is-primary .subtitle {
+                font-size: 1.8rem !important;
+            }
+
+        body {
+            border: 5px solid green;
+            margin: 0;
+        }
+
+        .section {
+            border-top: 25px solid yellow;
+            padding-top: 30px;
+            padding-bottom: 20px;
+        }
+
+            .section .image img {
+                width: 50%;
+                height: auto;
+            }
+
+        h1 {
+            font-size: 4em
+        }
+
+        /* Sets styles for navigation bar */
+        .top-bar {
+            display: flex;
+            justify-content: space-evenly;
+            background-color: #f1f1f1;
+            padding: 10px 0;
+        }
+
+            .top-bar a {
+                font-size: 1.2em;
+                font-weight: bold;
+                cursor: pointer;
+                text-decoration: none;
+                color: #000;
+            }
+
+        .section-content {
+            display: none;
+        }
+
+            .section-content.active {
+                display: block;
+            }
+
+        /* link for a direct link to the landing page */
+
+        .landing-page-link,
+        .video-link {
+            font-size: 1.5em;
+            font-weight: bold;
+            text-decoration: none;
+            color: #000;
+            padding: 10px;
+            display: inline-block;
+            background-color: #f1f1f1;
+            border: 2px solid #000;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Landing Page Link and Video Link -->
+    <a href="landingpage.html" class="landing-page-link">Landing Page</a>
+    <a href="https://video.bellarmine.edu/media/Food+Finder+%28CS_400+Assignment_2_Video%29/1_a1l9ze4a" class="video-link" target="_blank">Video</a>
+
+    <!-- Task: creates the categories for the top bar  -->
+    <div class="top-bar">
+        <a id="personas-link">Personas</a>
+        <a id="scenarios-link">Scenarios</a>
+        <a id="user-stories-link">User Stories</a>
+        <a id="feature-list-link">Feature List</a>
+    </div>
+
+    <section class="Personas section-content" id="personas-section">
+        <div class="container">
+            <h1><strong>Personas</strong></h1>
+            <h2><strong>Juan Vallavin Balaban, Site Steward, Retired Teacher</strong></h2>
+            <p>
+                Juan is a 67-year-old site steward who has been managing ecological restoration projects for over 3 decades. 
+                Every workday morning, he starts his day at 7 AM by contacting fire monitoring services to confirm site conditions. 
+                With over 100 acres to manage, he carefully selects controlled burn sites and plants for restoration. 
+                Using Gaia Eye, he maps out restoration efforts, prioritizes high-risk areas, and coordinates volunteer workdays. 
+
+            </p>
+
+            <h3><strong>Miguel Andres, Site Steward</strong></h3>
+            <p>
+                Miguel is a conservationist in his late 60s who supervises restoration sites for a the North Branch of the Cook County Forest Preserve. 
+                He relies on Gaia Eye to monitor invasive species regrowth and ensure previous restoration efforts are effective. 
+                By using drone-based imagery and AI-driven classification, he can assess large areas quickly and plan targeted removal operations. 
+            </p>
+
+            <h4><strong>Sara Sarkar</strong></h4>
+            <p>
+                Dr. Sara Sarkar is a professor specializing in machine learning applications in remote sensing. 
+                She has researched the effectiveness of CNNs for ecological monitoring and recommended the use of YOLOv11 for Gaia Eye. 
+                Her expertise helps refine the AI model, improving detection accuracy for invasive species. 
+            </p>
+
+            <h4><strong>Jose SanAngel, volunteer</strong></h4>
+            <p>
+                Jose is a passionate computer scientist in his mid-30s, leading the development of Gaia Eye. 
+                He has taken a special interst in AI and applied machine learning, ensuring that the software remains efficient and scalable. 
+                With a love for nature and technology, he is dedicated to creating a tool that empowers conservationists.
+            </p>
+
+            <h4><strong>Tomaso Wells, esteemed professor</strong></h4>
+            <p>
+                Tomaso is a university professor in his 30s who specializes in environmental science. 
+                Though he prefers lab work over fieldwork, he recognizes Gaia Eye’s potential in conservation research. 
+                He encourages his students to use the tool for real-world ecological studies.
+            </p>
+        </div>
+    </section>
+
+    <section class="Scenarios section-content" id="scenarios-section">
+        <div class="container">
+            <h1><strong>Scenarios</strong></h1>
+
+            <h2><strong>John Balaban, Site Steward</strong></h2>
+            <p>
+                John starts his morning by calling fire monitoring services at 7 AM. He checks Gaia Eye to see which areas need attention, then plans the day’s restoration efforts.
+            </p>
+
+            <h3><strong>Miguel Andres, Site Steward</strong></h3>
+            <p>
+                Miguel reviews the latest drone imagery from Gaia Eye. He identifies a high-risk area where invasive species have spread and marks it for a volunteer workday.
+            </p>
+
+            <h4><strong>Sara Sarkar, Researcher</strong></h4>
+            <p>
+                Sara uses Gaia Eye’s AI-generated reports to analyze the spread of invasive species. She refines the AI model to improve classification accuracy.
+            </p>
+
+            <h4><strong>Jose SanAngel, Developer</strong></h4>
+            <p>
+                Jose tests a new feature in Gaia Eye that improves drone image processing speed. After debugging, he pushes an update to the software.
+            </p>
+
+            <h4><strong>Tommy Wells, Professor</strong></h4>
+            <p>
+                Tommy integrates Gaia Eye into his university’s environmental studies curriculum, using it to teach students about ecological monitoring techniques.
+            </p>
+        </div>
+    </section>
+
+    <section class="User Stories section-content" id="user-stories-section">
+        <div class="container">
+            <h1><strong>User Stories</strong></h1>
+            <p>As a site steward, I want to map invasive species locations so I can plan restoration efforts effectively.</p><br>
+            <p>As a conservationist, I need real-time updates on restoration progress so I can allocate resources efficiently.</p><br>
+            <p>As a volunteer coordinator, I want to use Gaia Eye’s data to schedule workdays where help is most needed.</p><br>
+            <p>As a researcher, I need AI-classified plant data to study the effectiveness of ecological interventions.</p><br>
+            <p>As a landowner, I want to monitor my property remotely to track the spread of invasive species.</p><br>
+            <p>As a drone operator, I need a streamlined workflow to capture and upload images for analysis.</p><br>
+            <p>As an environmental professor, I want to integrate Gaia Eye into coursework for hands-on conservation studies.</p><br>
+            <p>As a student, I want to use Gaia Eye to analyze real-world ecological data for research projects.</p><br>
+            <p>As a policy maker, I want to use Gaia Eye’s reports to support funding for habitat restoration initiatives.</p><br>
+            <p>As a developer, I need an intuitive interface that allows conservationists with limited tech experience to use Gaia Eye effectively.</p><br>
+        </div>
+    </section>
+
+    <section class="Feature List section-content" id="feature-list-section">
+        <div class="container">
+            <h1><strong>Feature List</strong></h1>
+            <p>As a site manager, I want Gaia Eye to generate an up-to-date map of invasive species locations.</p><br>
+            <p>As a researcher, I want high-resolution drone imagery analyzed with AI to classify species.</p><br>
+            <p>As a conservationist, I need real-time monitoring of restoration efforts.</p><br>
+            <p>As a developer, I want seamless integration between Gaia Eye’s database, AI model, and mapping tools.</p><br>
+
+            <h2><strong>Constraints</strong></h2>
+            <p>We are limited by available drone hardware and the accuracy of AI classification models.</p><br>
+            <p>We must consider accessibility for non-technical conservationists using the platform.</p>
+        </div>
+    </section>
+
+    <script>
+        //Task: shows current section based on where mouse scrolls.
+        document.getElementById('personas-link').addEventListener('mouseover', function () {
+            document.querySelector('.section-content.active')?.classList.remove('active');
+            document.getElementById('personas-section').classList.add('active');
+        });
+
+        document.getElementById('scenarios-link').addEventListener('mouseover', function () {
+            document.querySelector('.section-content.active')?.classList.remove('active');
+            document.getElementById('scenarios-section').classList.add('active');
+        });
+
+        document.getElementById('user-stories-link').addEventListener('mouseover', function () {
+            document.querySelector('.section-content.active')?.classList.remove('active');
+            document.getElementById('user-stories-section').classList.add('active');
+        });
+
+        document.getElementById('feature-list-link').addEventListener('mouseover', function () {
+            document.querySelector('.section-content.active')?.classList.remove('active');
+            document.getElementById('feature-list-section').classList.add('active');
+        });
+    </script>
+
+</body>
+</html>

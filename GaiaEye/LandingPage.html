@@ -1,0 +1,337 @@
+﻿<!-- This document is for my capstone project.
+
+    Author: John Stangel | Bellarmine University-->
+<!-- Our document links a Bulma framework that we used for our styling.
+    Additionally, we've written our style choices directly into the HTML.
+    Although the the CSS modifications are written directly into this code,  a
+    separate CSS file may be needed later depending on project needs.
+
+    -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gaia Eye</title>
+    <!--
+        Task: links Bulma css framework to aid in style choices, In this style section,
+        the header's color and font size is selected. The subtext's font is also modified
+        as is its size. This section adds a red border around the page and also adds a
+        yellow line separating each section. The final section uses an embedded Kaltura link
+        to directly insert our video.
+        -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+    <style>
+
+        .hero.is-primary {
+            background-color: green !important;
+            color: rgb(12, 53, 233) !important;
+            margin: 0;
+        }
+
+            .hero.is-primary .title,
+            .hero.is-primary .subtitle {
+                color: rgb(12, 53, 233) !important;
+            }
+
+            .hero.is-primary .title {
+                font-size: 7.75rem !important;
+            }
+
+            .hero.is-primary .subtitle {
+                font-size: 1.8rem !important;
+            }
+
+        body {
+            border: 5px solid green;
+            margin: 0;
+        }
+
+
+        .section {
+            border-top: 25px solid green;
+            padding-top: 30px;
+            padding-bottom: 20px;
+        }
+
+        .section h2 {
+             font-size: 3rem; /* Adjust as needed */
+             font-weight: bold;
+        }
+        .section .image img {
+             width: 80%;
+             height: auto;
+             display block;
+             margin: 0 auto;
+        }
+    </style>
+
+</head>
+
+<!-- the body of our program is contains a header that consists of our product name and slogan.
+    Each subsequent sections in the body have alternative text and images, or videos-->
+
+
+
+<body>
+    <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+                <strong>Gaia Eye</strong>
+            </a>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="C:\Users\juani\Desktop\GaiaEye\DesignArtifacts.html">
+                    Design Artifacts
+                </a>
+            </div>
+        </div>
+    </nav>
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <div class="container">
+
+                <h1 class="title">
+                    Gaia Eye
+
+                </h1>
+
+                <h2 class="subtitle">
+                    Climate Action, In Action
+
+                </h2>
+
+            </div>
+        </div>
+    </section>
+
+    <!--section 1-->
+    <section class="section">
+        <div class="columns">
+            <div class="column is-half">
+
+                <h2>
+                    <strong>Mapping the Present to Protect the Future</strong>
+                </h2>
+
+                <p class="content">
+                    <!--section 1
+                    A casuality of the Columbian Exchange, industrialization, and  globalization has been the
+                    network of native, robust ecosystems that were once abundand. A growing body of research
+                    has shown that some invasive plants, long imported for their agricultural or landscaping allure,
+                    have taken over and crowded out native species all across the world. In some parts of Illinois,
+                    European Buckthorn accounts for over 50% of the tree cover. That means that HALF of land is
+                    being choked out by this single plant.
+
+                    Luckily, a group of dedicated changemakers, through private, public, and individual efforts, has
+                    been clawing back the land from this ruthless invader. Through the use of community
+                    mobilization, teamwork, and the continuous dedication of thousands of peopole, progress being made.
+                    One of the growing issues in the effort, however, is the monitering of restored areas for the return of
+                    Buckthorn. With Gaia Eye, conversationists and nature lovers have another tool available to help better
+                    deploy resources and manage natural spaces. By harnessing emerging drone and AI technologies, our software
+                    has the potential to tip the scales in favor of Gaia herself.
+                -->
+                    Conservation efforts and AI capibilities have converged to create GaiaEye, a mapping
+                    software that provides the boots on the ground with information they need to effectively make
+                    sustainable and effecient decisions. With image recognition and geolocational plotting, 
+                    conservationists can use GaiaEye's map to better understand their sites and monitor progress.
+                    
+
+
+                </p>
+
+            </div>
+            <div class="column is-half">
+                <figure class="image">
+                    <img src="file:///C:/Users/juani/Desktop/GaiaEye/img/dronecanopy.png" alt="CHANGE THIS LATER">
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!--section 2-->
+
+    <section class="section">
+        <div class="columns">
+            <div class="column is-half">
+                <figure class="image">
+                    <img src="file:///C:/Users/juani/Desktop/GaiaEye/img/map.png" alt="CHANGE THIS LATER">
+                </figure>
+            </div>
+            <div class="column is-half">
+
+                <h2><strong>How does it work, exactly?</strong></h2>
+
+                <p class="content">
+                    Gaia Eye combines the use of UAV (drone) photography, image recognition, and geolocation data to
+                    provide the user with a regularly updated, dynamic map of European Buckthorn in an area. With a simple setup using
+                    a DJI drone, GaiaEye takes multiple photos of a given area and analyzes them with our algorithm. When 
+                    identified, our software plots each instance on a map that is available to the user. 
+
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!--section 3-->
+
+    <section class="section">
+        <div class="columns">
+
+            <div class="column is-half">
+                <h2><strong>Our Vision, from acorn to oak</strong></h2>
+                <p class="content">
+                    A new initiative of <a href="https://www.allamericangardens.org" target="_blank">All-American Gardens</a>, 
+                    Gaia Eye will incorporate emerging technologies to assist in the restoration of our green spaces. Our software 
+                    can monitor, identify, and inform for more effective stewardship. Founded in 2016, All-American Gardens reintroduced 
+                    native species and help strengthen urban ecosystems in Indianapolis' East Side. Through intentional orchard management, 
+                    targeted planting, and partnerships with city-wide sustainability experts, our organization has 
+                    established two urban prairies, two fruit orchards, and a hazelnut patch. With the development and deployment
+                    of Gaia Eye, All-American Gardens can further its impact to branch out of the urban niche and move into
+                    the broader world of habitat restoration.
+                
+                    Gaia Eye's realization is thanks in large part to another public partnership with the Forest Preserves of Cook
+                    County. Developed in the field and with the sole permission of the FPCC, our software is field-tested and Mother
+                    Nature approved. Special thanks go out to John Balaban, Michael Andrews, and Doctor Sayani Sarkar, without whose 
+                    guidance Gaia Eye would have never come to fruition. 
+                </p>
+                
+            </div>
+            <div class="column is-half">
+                <figure class="image">
+                    <img src="file:///C:/Users/juani/Desktop/GaiaEye/img/aag.png" alt="CHANGE THIS LATER">
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!--section 4-->
+
+    <section class="section">
+        <div class="columns">
+
+            <div class="column is-half">
+                <figure class="image">
+                    <img src="file:///C:/Users/juani/Desktop/GaiaEye/img/burnpile.png" alt="CHANGE THIS LATER">
+                </figure>
+            </div>
+
+            <div class="column is-half">
+
+                <h2><strong>Leaving no Leaf Unturned</strong></h2>
+
+                <p class="content">
+                    For years, volunteer efforts have made slow, incredmental progress towards eradicating invasives and bolstering
+                    native environments. With GaiaEye generated maps, these volunteers can target their attention to invasive flare-ups 
+                    and monitor previous areas to measure intentional seeding efforts. 
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <!--section 5-->
+    <section class="section">
+        <div class="columns">
+
+            <div class="column is-half">
+
+                <h2><strong>A Message From Our Founder.</strong></h2>
+
+                <h2>John Stangel</h2>
+
+                <p class="content">
+                    An educator and environmental steward, John has been an
+                    avid naturalist and has a special interest in the burgoning
+                    intersections of  nature and technology. Through projects like
+                    Gaia Eye, John sees an opportunity to empower those on the ground
+                    with the data they need to make the most informed decisions.
+
+                    As the founder and operator of All-American Gardens, John has been
+                    revitalizing and preserving small natural spaces in Indianapolis's
+                    east side.
+
+                </p>
+
+            </div>
+
+            <div class="column is-half">
+                <figure class="image">
+                    <img src="" alt="plants">
+                </figure>
+                <figure class="image">
+                    <img src="file:///C:/Users/juani/Desktop/GaiaEye/img/fire.jpg" alt="John">
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!--section 6
+    <section class="section">
+        <div class="content has-text-centered">
+            <iframe id="kaltura_player"
+                    src="https://cdnapisec.kaltura.com/p/2619912/sp/261991200/embedIframeJs/uiconf_id/45753661/partner_id/2619912?iframeembed=true&playerId=kaltura_player&entry_id=1_uzhtrfdl&flashvars[streamerType]=auto&amp;flashvars[localizationCode]=en&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[hotspots.plugin]=1&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_zifg4i7n"
+                    width="500"
+                    height="350"
+                    allowfullscreen
+                    webkitallowfullscreen
+                    mozAllowFullScreen
+                    allow="autoplay *; fullscreen *; encrypted-media *"
+                    sandbox="allow-downloads allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation"
+                    frameborder="0"
+                    title="FoodFinder Clip">
+            </iframe>
+        </div>
+    </section>
+
+-->
+
+    <!--This final section is our footer, which displays our app name and our names.-->
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>Gaia Eye</strong> by John Stangel | Bellarmine University.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
+
+<!--section 2
+
+<section class="section">
+    <div class="columns">
+        <div class="column is-half">
+            <figure class="image">
+                <img src="file:///C:/Users/juani/Desktop/FoodFinder/img/Chefs.jpg" alt="CHANGE THIS LATER">
+            </figure>
+        </div>
+        <div class="column is-half">
+
+            <h2><strong>Why Gaia Eye is part of the solution to the environmental's paradoxIf our unintentional actions got us into this environmental mess, then what could our intentional actions do?.</strong></h2>
+
+            <p class="content">
+                With Gaia Eye, we harness the same power that has desimated nature to now bolster it. We've
+                taken our species to the bottom of the ocean, into space, and even on the moon. The burden of
+                these advancements has come at the cost of the other life around us, and it's time to
+                right the wrongs of our species. Through autonomous monitoring and analysis, we provide
+                conversationists with vital information to best manage our natural world.
+                We've come a long way from hunting mammoths and intermingling with Neanderthals. Our success has
+                led to incredible feats of engineering and the depth of human knowledge a simple internet search away. Unbeknownst
+                to us until recently, the environment and nature as a whole has taken the largest toll for our progress.
+                Now, it's incumbant on us to design technologies that have come out of the industrial and technilogical revolutions
+                that will not only take stock of what we have, but also build better autonmous systems forrestoration and conservation
+                in the future.
+            </p>
+
+        </div>
+    </div>
+</section>
+  -->
+

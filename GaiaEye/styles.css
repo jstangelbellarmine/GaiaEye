@@ -1,0 +1,82 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+main {
+    padding: 1em;
+}
+
+/* Style the image selection section */
+#image-selection {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Flex container for images */
+.image-container {
+    display: flex;
+    justify-content: space-evenly; /* Evenly spaces items across the container */
+    align-items: center;          /* Align items vertically in the center */
+    margin: 20px auto;
+    max-width: 800px;             /* Restrict the container width */
+    padding: 10px;
+}
+
+/* Style the images */
+.plant-image {
+    width: 200px;                /* Set image width */
+    height: auto;                /* Maintain aspect ratio */
+    border: 2px solid #ddd;      /* Optional: Add a border */
+    border-radius: 10px;         /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for aesthetics */
+    cursor: pointer;            /* Make the images clickable */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
+}
+
+/* Hover effect */
+.plant-image:hover {
+    transform: scale(1.1);       /* Slightly enlarge the image */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background: #333;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.plant-image {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.plant-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.plant-image {
+    cursor: pointer; /* Show a hand icon on hover */
+    text-decoration: none; /* Remove underline from text */
+    color: inherit; /* Keep text color */
+}
+
+.plant-image:hover img {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+    transition: transform 0.2s ease-in-out;
+}
