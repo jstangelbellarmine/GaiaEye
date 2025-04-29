@@ -1,0 +1,45 @@
+import tkinter as tk
+
+
+from tkinter import filedialog, messagebox
+
+
+
+class GaiaGUI:
+    def __init__(self, master):
+        self.master = master
+        master.title("Gaia Eye")
+        master.geometry("400x300")
+
+        self.label = tk.Label(master, text="🌿 Gaia Eye\nDetect European Buckthorn", font=("Arial", 14))
+        self.label.pack(pady=20)
+
+        self.upload_button = tk.Button(master, text="Upload Images", command=self.upload_images)
+        self.upload_button.pack(pady=5)
+
+        self.run_button = tk.Button(master, text="Run Gaia Eye", command=self.run_gaia)
+        self.run_button.pack(pady=5)
+
+        self.threshold_scale = tk.Scale(master, from_=50, to=100, orient="horizontal", label="Confidence Threshold (%)")
+        self.threshold_scale.set(75)
+        self.threshold_scale.pack(pady=10)
+
+        self.image_paths = []
+
+    def upload_images(self):
+        self.image_paths = filedialog.askopenfilenames(title="Select Drone Photos",
+                                                       filetypes=[("Image files", "*.jpg *.jpeg *.png")])
+        if self.image_paths:
+            messagebox.showinfo("Files Uploaded", f"{len(self.image_paths)} images selected.")
+
+    def run_gaia(self):
+        if not self.image_paths:
+            messagebox.showwarning("No Files", "Please upload images first.")
+            return
+
+        messagebox.showinfo("Processing Complete", "Gaia Eye has finished running!")
+
+if __name__ == "__main__":
+    root = tk.Tk()
+    gui = GaiaGUI(root)
+    root.mainloop()
